@@ -14,6 +14,12 @@ public class Main {
 
         System.out.println("inside main");
 
+        Optional<List<Student>> optionalStudent = studentDao.getAll();
+
+        if(optionalStudent.isPresent()){
+            optionalStudent.get().stream().forEach(System.out::println);
+        }
+
     }
 }
 
