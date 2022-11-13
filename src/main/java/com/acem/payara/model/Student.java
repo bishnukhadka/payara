@@ -6,6 +6,7 @@ public class Student {
     private String email;
     private String contactNo;
 
+    public Student(){}
     public Student(Long id, String name, String email, String contactNo) {
         this.id = id;
         this.name = name;
@@ -44,4 +45,15 @@ public class Student {
     public void setContactNo(String contactNo) {
         this.contactNo = contactNo;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", contactNo='" + contactNo + '\'' +
+                '}';
+    }
+
 }

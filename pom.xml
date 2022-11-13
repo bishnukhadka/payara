@@ -13,4 +13,15 @@
         <maven.compiler.target>18</maven.compiler.target>
     </properties>
 
+    <packaging>jar</packaging>
+    <name>Payara</name>
+    <description>basic back-end website using payara.</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.18</version>
+        </dependency>
+    </dependencies>
 </project>
