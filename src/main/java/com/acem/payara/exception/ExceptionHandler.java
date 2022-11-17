@@ -1,4 +1,7 @@
-package com.acem.payara.util;
+package com.acem.payara.exception;
+
+import com.acem.payara.exception.wrapper.CodeWrapper;
+import com.acem.payara.exception.wrapper.ReturnableCodeWrapper;
 
 public class ExceptionHandler {
     public static void handle(CodeWrapper codeWrapper){

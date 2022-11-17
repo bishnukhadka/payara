@@ -1,4 +1,4 @@
-package com.acem.payara.util;
+package com.acem.payara.exception.wrapper;
 
 @FunctionalInterface
 public interface CodeWrapper {
