@@ -39,6 +39,14 @@ public class ResponseBuilder {
     public static Response serverError(){
         return new Response()
                 .success(false)
+                .description(ResponseMessageConstant.SERVER_ERROR)
                 .statusCode(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+    }
+
+    public static Response invalidPath(){
+        return new Response()
+                .success(false)
+                .description(ResponseMessageConstant.INVALID_PATH)
+                .statusCode(HttpServletResponse.SC_BAD_REQUEST);
     }
 }
